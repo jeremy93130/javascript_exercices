@@ -64,3 +64,5 @@ alert(newFirstName);
 // 2 - une fonction avec au moins un paramètre avec une valeur de retour,
 // 3 - une fonction sans paramètre sans valeur de retour ,
 // 4 - une fonction sans paramètre avec une valeur de retour .
+
+
