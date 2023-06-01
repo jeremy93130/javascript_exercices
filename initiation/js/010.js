@@ -64,5 +64,5 @@ var k = 0;
 
 while (k < couleurs.length) {
   document.write(`Affichage de ${k}`);
-//   k++;
+  //   k++;
 }
