@@ -38,13 +38,13 @@ var resultatDeLaFonction = affichagePrenom2(
   "<br> mes développeurs sont géniaux"
 );
 
-document.write(resultatDeLaFonction);
+// document.write(resultatDeLaFonction);
 
 var tabEnfant = ["Alexis", "Wassila"];
 // Les Deux syntaxes suivantes sont identiques, avec une différence significative : la première contient un tableau statique et la deuxième qui est bien appréciée contient un élément synamique.
 var tabFamille = [tabEnfant, "mitra"];
 
-console.log(tabFamille);
+// console.log(tabFamille);
 
 // Exercice 2
 
@@ -67,9 +67,9 @@ function additionDesChiffres(paramNum, paramString, paramArray) {
   return resultat;
 }
 
-var resultatAddition = document.write(
-  additionDesChiffres(15, "le resultat de notre fonction", [])
-);
+// var resultatAddition = document.write(
+//   additionDesChiffres(15, "le resultat de notre fonction", [])
+// );
 
 // Exercice chatGPT :
 
@@ -82,6 +82,22 @@ var count = 0;
 var nombres = 0;
 while (nombres < 10000) {
   nombres = count * count;
-  console.log(nombres);
+  // console.log(nombres);
   count++;
 }
+
+// EXERCICE MITRA
+
+//  1 - Saisir un nombre dans un formulaire
+//  2 - Tant que la valeur est (inférieure ou égale à 3) ou (supérieure ou égale à 120) ou une (string), la boîte de dialogue s'affiche, qui vous demande "Indiquez votre âge".
+//  3 - Déclarer une variable "majoriteFr" qui comprend la valeur 18
+//  4 - Déclarer une fonction "afficheAge" qui prend en paramètre un nombre , la fonction n'a pas de valeur de retour
+
+var age = parseInt(prompt("Saisir un âge"));
+
+while (age <= 3 || age >= 120 || isNaN(age)) {
+  age = parseInt(prompt("Indiquez votre âge !"));
+}
+document.write(`cette personne a ${age} ans`);
+
+function ageMajorite(){}

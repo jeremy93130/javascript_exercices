@@ -66,3 +66,4 @@ alert(newFirstName);
 // 4 - une fonction sans paramètre avec une valeur de retour .
 
 
+
