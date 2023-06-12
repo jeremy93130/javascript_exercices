@@ -102,15 +102,11 @@ while (age <= 3 || age >= 120 || isNaN(age)) {
 document.write(`cette personne a ${age} ans`);
 
 function ageMajorite(agePersonne, ageAdulte) {
-  if (agePersonne > 3 && agePersonne < ageAdulte) {
+  if (agePersonne < ageAdulte) {
     alert("vous n'êtes pas encore majeur");
-  } else if (agePersonne <= 120) {
+  } else if (agePersonne >= ageAdulte) {
     alert("Bienvenu, vous êtes majeur :)! ");
   }
 }
 
 ageMajorite(age, majoriteFr);
-
-
-
-
