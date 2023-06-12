@@ -59,13 +59,7 @@ var tabFamille = [tabEnfant, "mitra"];
 
 // 3 - On affiche la valeur de retour sur la page web
 
-function additionDesChiffres(paramNum, paramString, paramArray) {
-  for (i = 1; i <= paramNum; i++) {
-    paramArray.push(i);
-  }
-  var resultat = [paramString, paramArray];
-  return resultat;
-}
+
 
 // var resultatAddition = document.write(
 //   additionDesChiffres(15, "le resultat de notre fonction", [])
@@ -100,13 +94,5 @@ while (age <= 3 || age >= 120 || isNaN(age)) {
   age = parseInt(prompt("Indiquez votre âge !"));
 }
 document.write(`cette personne a ${age} ans`);
-
-function ageMajorite(agePersonne, ageAdulte) {
-  if (agePersonne < ageAdulte) {
-    alert("vous n'êtes pas encore majeur");
-  } else if (agePersonne >= ageAdulte) {
-    alert("Bienvenu, vous êtes majeur :)! ");
-  }
-}
 
 ageMajorite(age, majoriteFr);
