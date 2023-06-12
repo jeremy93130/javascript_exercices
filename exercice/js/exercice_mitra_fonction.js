@@ -94,10 +94,23 @@ while (nombres < 10000) {
 //  4 - Déclarer une fonction "afficheAge" qui prend en paramètre un nombre , la fonction n'a pas de valeur de retour
 
 var age = parseInt(prompt("Saisir un âge"));
+var majoriteFr = 18;
 
 while (age <= 3 || age >= 120 || isNaN(age)) {
   age = parseInt(prompt("Indiquez votre âge !"));
 }
 document.write(`cette personne a ${age} ans`);
 
-function ageMajorite(){}
+function ageMajorite(agePersonne, ageAdulte) {
+  if (agePersonne > 3 && agePersonne < ageAdulte) {
+    alert("vous n'êtes pas encore majeur");
+  } else if (agePersonne <= 120) {
+    alert("Bienvenu, vous êtes majeur :)! ");
+  }
+}
+
+ageMajorite(age, majoriteFr);
+
+
+
+
