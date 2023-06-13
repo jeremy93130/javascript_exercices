@@ -33,3 +33,5 @@ function prenomEtAdjectifs(array1, array2) {
 }
 var prenomsAdj = prenomEtAdjectifs(prenom, adjectifs);
 document.write(prenomsAdj);
+
+
