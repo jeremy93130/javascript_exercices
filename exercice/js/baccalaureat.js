@@ -29,10 +29,13 @@ for (i = 0; i < result.length; i++) {
   //   document.write(`La note de ${result[i][0]} est de ${result[i][1]} <br>`);
 }
 
+// EXERCICE PRENOM + ADJECTIFS ENSEMBLE :
 
+var nombrePrenom = prompt("veuillez saisir le nombre de prénoms");
+var nombreAdjectif = prompt("Veuillez saisir le nombre d'adjectifs");
 
-var prenoms = fillArray(12);
-var adjectif = fillArray(12);
+var prenoms = fillArray(nombrePrenom);
+var adjectif = fillArray(nombreAdjectif);
 
 var resultat = prenoms[Math.floor(Math.random() * prenom.length)];
 var resultat2 = adjectif[Math.floor(Math.random() * adjectif.length)];
