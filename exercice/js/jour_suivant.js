@@ -49,6 +49,7 @@ switch (jours) {
     break;
   case semaine[6]:
     document.write(`<br> demain nous serons ${semaine[0]}`);
+    break;
   default:
     while (jours !== semaine) {
       jours = prompt("Veuillez entrer un jour correct").toLowerCase();
