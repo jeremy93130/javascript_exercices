@@ -18,14 +18,13 @@ if (
   if (minute === 60) {
     minute = 0;
     heure++;
-    if (heure === 24) {
-      heure = 0;
-    }
   }
+  if (heure === 24) {
+    heure = 0;
+  }
+  document.write(
+    `Dans une seconde il sera exactement ${heure} heure ${minute} minutes et ${seconde} secondes`
+  );
 } else {
   document.write("mauvaise heure");
 }
-
-document.write(
-  `Il sera exactement ${heure} heure ${minute} minutes et ${seconde} secondes`
-);
