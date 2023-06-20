@@ -1,14 +1,14 @@
 var developpeurs = [
-  "Alexis",
+//   "Alexis",
   "Alin",
   "Cynthia",
   "Faïssal",
   "Jérémy",
-  "Karima",
+//   "Karima",
   "Michel",
   "Narcis",
   "Nawal",
-  "Oliver",
+//   "Oliver",
   "Rahim",
   "Wassila",
 ];
