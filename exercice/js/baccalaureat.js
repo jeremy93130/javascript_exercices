@@ -41,3 +41,4 @@ var resultat = prenoms[Math.floor(Math.random() * prenom.length)];
 var resultat2 = adjectif[Math.floor(Math.random() * adjectif.length)];
 
 document.write(`${resultat} est très ${resultat2}`);
+document.write(`${resultat} est le gagnant !`);
