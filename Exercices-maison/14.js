@@ -1,10 +1,12 @@
-var nombre = 0; // Valeur initiale permettant d'entrer dans la boucle
-while ((nombre < 50) || (nombre > 100)) {
-    nombre = Number(prompt("Entrez un nombre entre 50 et 100 : "));
+// var nombre = 0; // Valeur initiale permettant d'entrer dans la boucle (0 étant plus petit que 50 on entre dans la boucle while)
+var nombre = Number(prompt("Veuillez écrire un nombre entre 50 et 100"));
+while (nombre < 50 || nombre > 100) {
+  nombre = Number(prompt("Entrez un nombre entre 50 et 100 : "));
 }
 
+document.write(`<p>${nombre}</p>`);
 
-// premier methode sans inverse ne fonctionne pas?
+// premiere methode sans inverse ne fonctionne pas?
 // var nombre = parseInt(prompt("Entrer un nombre entre 50 et 100 :"));
 // while (nombre >= 50 && nombre <= 100) {
 //     alert("le nombre : " + nombre + " que Vous avez saisie  est compris entre 50 et 100");

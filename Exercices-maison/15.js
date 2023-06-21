@@ -2,13 +2,13 @@ var saisie = parseInt(prompt("Veuillez saisir un nombre entre 2 et 9"));
 
 var res;
 
-if (saisie >= 2 && saisie <= 9) {
-  for (i = 1; i <= saisie; i++) {
-    if (saisie >= i) {
-      res = saisie * i;
-      document.write(`<p> La multiplication du chiffre est la suivante ${res}`);
-    }
-  }
-} else {
-    saisie = parseInt(prompt("Veuillez noter un chiffre entre 2 et 9 non de dieu"))
+while (isNaN(saisie) || saisie < 2 || saisie > 9) {
+  saisie = parseInt(prompt("Entrez un chiffre correct entre 2 et 9"));
+}
+
+for (i = 1; i <= 10; i++) {
+  res = saisie * i;
+  document.write(
+    `<p>Le resultat de la multiplication de ${saisie} * ${i} est égal à : ${res}</p>`
+  );
 }
