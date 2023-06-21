@@ -1,19 +1,17 @@
-// boucle FOR
-var diese = "";
-var rang;
-for (rang = 0; rang <= 7; rang++) {
-    diese += "#";
-    document.write(diese + "<br>");
-}
+var dieze = "#";
 
-// boucle WHILE
-console.log("WHILE");
-var ligne = "";
-var i = 1;
-while (i <= 7) {
-    ligne = ligne + "#";
-    // Autre possibilité avec l'opérateur +=
-    //ligne += "#";
-    console.log(ligne);
-    i++;
+// Avec For
+
+// for (i = 1; i <= 7; i++) {
+//   if (dieze.length === i) {
+//     document.write(`<p>${dieze}</p>`);
+//     dieze += "#";
+//   }
+// }
+
+// Avec While
+
+while (dieze.length <= 7) {
+  document.write(`<p>${dieze}</p>`);
+  dieze += "#";
 }
