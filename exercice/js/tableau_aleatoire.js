@@ -9,7 +9,7 @@ var developpeurs = [
   "Narcis",
   "Nawal",
 //   "Oliver",
-  "Rahim",
+  // "Rahim",
   "Wassila",
 ];
 
