@@ -1,34 +1,29 @@
-/*
- Activité : jeu de devinette
- */
+var bienvenue = alert("Bienvenue ! ");
 
-alert("Hello et bienvenue !");
+var aleatoire = Math.floor(Math.random() * 101);
+console.log(aleatoire);
 
-// Cette ligne génère aléatoirement un nombre entre 1 et 100
-var solution = Math.floor(Math.random() * 100) + 1;
+var saisie;
 
-// TEST pour mieux vérifier le programme
-console.log("(La solution est " + solution + ")");
-
-for (var i = 1; i <= 6; i++) {
-    nbJoueur = parseInt(prompt("Le but du jeu est simple. Je pense à un nombre entre 0 et 100. A ton avis, quel est ce nombre ? Notes le dans la zone ci-dessous, tu as 6 essais."));
-    if (!isNaN(nbJoueur)) {
-        if (solution === nbJoueur) {
-            alert("Bravo vous avez trouvé !");
-            i = 6;
-        } else {
-            if (solution < nbJoueur) {
-                alert("Le nombre est plus petit, essai " + i + " sur 6");
-            } else {
-                alert("Le nombre est plus grand, essai " + i + " sur 6");
-            }
-        }
-    } else {
-        alert("Vous n'avez pas saisi un nombre !");
-    }
+while (saisie !== aleatoire && saisie > 100 && saisie < 1) {
+  saisie = parseInt(prompt("Réessayez !"));
 }
 
-
-
-
-alert("La bonne réponse est " + solution + ".");
+for (i = 1; i <= 6; i++) {
+  saisie = parseInt(prompt("Essayez de trouver le nombre"));
+  if (saisie < aleatoire) {
+    alert("Le nombre est plus petit que le nombre magique, réessayez :D !");
+  } else if (saisie > aleatoire) {
+    alert("Le nombre est plus grand que le nombre magique, réessayez :D !");
+  } else if (isNaN(saisie)) {
+    alert("Merci d'entrer un nombre !");
+  } else if (saisie === aleatoire) {
+    document.write(
+      `<p>Félicitations ! vous avez trouvé le nombre ${aleatoire}</p>`
+    );
+    break;
+  } else{
+    document.write(`<p>Perdu ! La bonne réponse était ${aleatoire}</p>`);
+    break;
+  }
+}
