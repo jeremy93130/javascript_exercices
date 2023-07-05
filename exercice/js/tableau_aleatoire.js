@@ -1,5 +1,5 @@
 var developpeurs = [
-  "Abraham",
+  // "Abraham",
   //   "Alexis",
   "Alin",
   "Cynthia",
@@ -9,9 +9,9 @@ var developpeurs = [
   "Michel",
   "Narcis",
   // "Nawal",
-  "Oliver",
+  // "Oliver",
   // "Rahim",
-  "Wassila",
+  // "Wassila",
 ];
 
 var developpeurs_affiche = Math.floor(Math.random() * developpeurs.length);

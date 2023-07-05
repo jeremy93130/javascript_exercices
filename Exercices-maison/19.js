@@ -22,8 +22,8 @@ for (i = 1; i <= 6; i++) {
       `<p>Félicitations ! vous avez trouvé le nombre ${aleatoire}</p>`
     );
     break;
-  } else{
-    document.write(`<p>Perdu ! La bonne réponse était ${aleatoire}</p>`);
-    break;
+  }
+  if (i == 6) {
+    document.write(`<p>Perdu, la bonne réponse était ${aleatoire}</p>`);
   }
 }
