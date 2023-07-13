@@ -7,7 +7,7 @@ var developpeurs = [
   // "Jérémy",
   //   "Karima",
   "Michel",
-  "Narcis",
+  // "Narcis",
   // "Nawal",
   // "Oliver",
   // "Rahim",
